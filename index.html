@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍁URL Redirect Test🍁</title>
+</head>
+<body>
+🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
+🍁 Facebook News Redirect  🍁
+🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
+<script>
+// get the URL from the query string...
+const urlParams = new URLSearchParams(window.location.search);
+const URL = urlParams.get('URL');
+
+
+// redirect to the new location...
+setTimeout(() => {
+    if(URL) {
+        window.location = URL;
+    }
+}, 1000);
+</script>
+</body>
+</html>
